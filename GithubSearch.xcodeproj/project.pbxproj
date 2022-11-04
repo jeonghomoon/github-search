@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		416B316729153BD100680F41 /* GetCachedImageUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 416B316629153BD100680F41 /* GetCachedImageUseCaseTests.swift */; };
+		416B316929153BFA00680F41 /* GetCachedImageUseCase+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 416B316829153BFA00680F41 /* GetCachedImageUseCase+.swift */; };
 		41DA8BB42913ED2300A7DFA0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41DA8BB32913ED2300A7DFA0 /* AppDelegate.swift */; };
 		41DA8BB62913ED2300A7DFA0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41DA8BB52913ED2300A7DFA0 /* SceneDelegate.swift */; };
 		41DA8BB82913ED2300A7DFA0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41DA8BB72913ED2300A7DFA0 /* ViewController.swift */; };
@@ -20,6 +22,7 @@
 		41DA8BF32913F9B300A7DFA0 /* MockGithubRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41DA8BF22913F9B300A7DFA0 /* MockGithubRepository.swift */; };
 		41DA8BF52913FA7F00A7DFA0 /* SearchUsersUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41DA8BF42913FA7F00A7DFA0 /* SearchUsersUseCaseTests.swift */; };
 		41DA8BF82913FACC00A7DFA0 /* SearchUsersUseCase+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41DA8BF72913FACC00A7DFA0 /* SearchUsersUseCase+.swift */; };
+		41DA8BFD291539CD00A7DFA0 /* GetCachedImageUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41DA8BFC291539CD00A7DFA0 /* GetCachedImageUseCase.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		416B316629153BD100680F41 /* GetCachedImageUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCachedImageUseCaseTests.swift; sourceTree = "<group>"; };
+		416B316829153BFA00680F41 /* GetCachedImageUseCase+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GetCachedImageUseCase+.swift"; sourceTree = "<group>"; };
 		41DA8BB02913ED2300A7DFA0 /* GithubSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GithubSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41DA8BB32913ED2300A7DFA0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		41DA8BB52913ED2300A7DFA0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +54,7 @@
 		41DA8BF22913F9B300A7DFA0 /* MockGithubRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockGithubRepository.swift; sourceTree = "<group>"; };
 		41DA8BF42913FA7F00A7DFA0 /* SearchUsersUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchUsersUseCaseTests.swift; sourceTree = "<group>"; };
 		41DA8BF72913FACC00A7DFA0 /* SearchUsersUseCase+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SearchUsersUseCase+.swift"; sourceTree = "<group>"; };
+		41DA8BFC291539CD00A7DFA0 /* GetCachedImageUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCachedImageUseCase.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +139,7 @@
 			isa = PBXGroup;
 			children = (
 				41DA8BE82913F66C00A7DFA0 /* SearchUsersUseCase.swift */,
+				41DA8BFC291539CD00A7DFA0 /* GetCachedImageUseCase.swift */,
 			);
 			path = UseCase;
 			sourceTree = "<group>";
@@ -175,6 +182,7 @@
 			isa = PBXGroup;
 			children = (
 				41DA8BF72913FACC00A7DFA0 /* SearchUsersUseCase+.swift */,
+				416B316829153BFA00680F41 /* GetCachedImageUseCase+.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -183,6 +191,7 @@
 			isa = PBXGroup;
 			children = (
 				41DA8BF42913FA7F00A7DFA0 /* SearchUsersUseCaseTests.swift */,
+				416B316629153BD100680F41 /* GetCachedImageUseCaseTests.swift */,
 			);
 			path = Test;
 			sourceTree = "<group>";
@@ -292,6 +301,7 @@
 				41DA8BE92913F66C00A7DFA0 /* SearchUsersUseCase.swift in Sources */,
 				41DA8BEF2913F75B00A7DFA0 /* RequestConvertible.swift in Sources */,
 				41DA8BB42913ED2300A7DFA0 /* AppDelegate.swift in Sources */,
+				41DA8BFD291539CD00A7DFA0 /* GetCachedImageUseCase.swift in Sources */,
 				41DA8BE52913F5B200A7DFA0 /* UserModel.swift in Sources */,
 				41DA8BB62913ED2300A7DFA0 /* SceneDelegate.swift in Sources */,
 				41DA8BEC2913F6DC00A7DFA0 /* GithubRepositable.swift in Sources */,
@@ -302,6 +312,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				416B316929153BFA00680F41 /* GetCachedImageUseCase+.swift in Sources */,
+				416B316729153BD100680F41 /* GetCachedImageUseCaseTests.swift in Sources */,
 				41DA8BF82913FACC00A7DFA0 /* SearchUsersUseCase+.swift in Sources */,
 				41DA8BF52913FA7F00A7DFA0 /* SearchUsersUseCaseTests.swift in Sources */,
 				41DA8BF32913F9B300A7DFA0 /* MockGithubRepository.swift in Sources */,
