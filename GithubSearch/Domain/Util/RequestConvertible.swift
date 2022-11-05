@@ -6,4 +6,11 @@
 //
 
 protocol RequestConvertible {
+    var endpoint: String { get }
+
+    var path: String { get }
+
+    var method: String { get }
+
+    func asString() throws -> String
 }
