@@ -8,17 +8,6 @@
 @testable import GithubSearch
 import XCTest
 
-private struct DefaultRequest: RequestConvertible {
-    let path: String = "/valid"
-}
-
-private struct InvalidRequest: RequestConvertible {
-    let path: String = "/invalid%"
-}
-
-private struct EmptyPathRequest: RequestConvertible {
-}
-
 private struct Response: Decodable {
     var foo: String
 }
