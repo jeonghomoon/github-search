@@ -7,7 +7,7 @@
 
 import UIKit
 
-struct GetCachedImageRequest: RequestConvertible {
+struct GetCachedImageRequest {
     let image: String
 }
 

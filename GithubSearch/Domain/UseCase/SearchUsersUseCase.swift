@@ -5,7 +5,7 @@
 //  Created by Jeongho Moon on 2022/11/03.
 //
 
-struct SearchUsersRequest: RequestConvertible {
+struct SearchUsersRequest {
     let query: String
     let page: Int
 }

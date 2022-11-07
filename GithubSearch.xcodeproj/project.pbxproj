@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		415403D02919506F0050C54D /* GetCachedImageRequest+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415403CF2919506F0050C54D /* GetCachedImageRequest+.swift */; };
+		415403D2291950AF0050C54D /* SearchUserRequest+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415403D1291950AF0050C54D /* SearchUserRequest+.swift */; };
 		416B316729153BD100680F41 /* GetCachedImageUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 416B316629153BD100680F41 /* GetCachedImageUseCaseTests.swift */; };
 		416B316929153BFA00680F41 /* GetCachedImageUseCase+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 416B316829153BFA00680F41 /* GetCachedImageUseCase+.swift */; };
 		416B31792916A8E000680F41 /* DecodedDataRequester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 416B31782916A8E000680F41 /* DecodedDataRequester.swift */; };
@@ -20,6 +22,10 @@
 		41AF9A362917E46E00374433 /* CachedImageRequesterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41AF9A352917E46E00374433 /* CachedImageRequesterTests.swift */; };
 		41AF9A382917E4F700374433 /* FakeRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41AF9A372917E4F700374433 /* FakeRequest.swift */; };
 		41AF9A3A2917E5D100374433 /* ImageCache+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41AF9A392917E5D100374433 /* ImageCache+.swift */; };
+		41AF9A3E2919482200374433 /* UserPageResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41AF9A3D2919482200374433 /* UserPageResponse.swift */; };
+		41AF9A402919484700374433 /* UserResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41AF9A3F2919484700374433 /* UserResponse.swift */; };
+		41AF9A422919486A00374433 /* GithubRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41AF9A412919486A00374433 /* GithubRepository.swift */; };
+		41AF9A442919495300374433 /* GithubRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41AF9A432919495300374433 /* GithubRepositoryTests.swift */; };
 		41DA8BB42913ED2300A7DFA0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41DA8BB32913ED2300A7DFA0 /* AppDelegate.swift */; };
 		41DA8BB62913ED2300A7DFA0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41DA8BB52913ED2300A7DFA0 /* SceneDelegate.swift */; };
 		41DA8BB82913ED2300A7DFA0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41DA8BB72913ED2300A7DFA0 /* ViewController.swift */; };
@@ -47,6 +53,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		415403CF2919506F0050C54D /* GetCachedImageRequest+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GetCachedImageRequest+.swift"; sourceTree = "<group>"; };
+		415403D1291950AF0050C54D /* SearchUserRequest+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SearchUserRequest+.swift"; sourceTree = "<group>"; };
 		416B316629153BD100680F41 /* GetCachedImageUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCachedImageUseCaseTests.swift; sourceTree = "<group>"; };
 		416B316829153BFA00680F41 /* GetCachedImageUseCase+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GetCachedImageUseCase+.swift"; sourceTree = "<group>"; };
 		416B31782916A8E000680F41 /* DecodedDataRequester.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecodedDataRequester.swift; sourceTree = "<group>"; };
@@ -60,6 +68,10 @@
 		41AF9A352917E46E00374433 /* CachedImageRequesterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CachedImageRequesterTests.swift; sourceTree = "<group>"; };
 		41AF9A372917E4F700374433 /* FakeRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeRequest.swift; sourceTree = "<group>"; };
 		41AF9A392917E5D100374433 /* ImageCache+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ImageCache+.swift"; sourceTree = "<group>"; };
+		41AF9A3D2919482200374433 /* UserPageResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPageResponse.swift; sourceTree = "<group>"; };
+		41AF9A3F2919484700374433 /* UserResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserResponse.swift; sourceTree = "<group>"; };
+		41AF9A412919486A00374433 /* GithubRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubRepository.swift; sourceTree = "<group>"; };
+		41AF9A432919495300374433 /* GithubRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubRepositoryTests.swift; sourceTree = "<group>"; };
 		41DA8BB02913ED2300A7DFA0 /* GithubSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GithubSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41DA8BB32913ED2300A7DFA0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		41DA8BB52913ED2300A7DFA0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -100,6 +112,8 @@
 		416B316A2915455700680F41 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				41AF9A3B291947FD00374433 /* DTO */,
+				41AF9A3C2919480100374433 /* Repository */,
 				416B31772916A8D200680F41 /* Requester */,
 				416B317C2916A99800680F41 /* Util */,
 			);
@@ -156,10 +170,30 @@
 		416B31862916AAF600680F41 /* Test */ = {
 			isa = PBXGroup;
 			children = (
+				41AF9A432919495300374433 /* GithubRepositoryTests.swift */,
 				416B31872916AB0500680F41 /* DecodedDataRequesterTests.swift */,
 				41AF9A352917E46E00374433 /* CachedImageRequesterTests.swift */,
 			);
 			path = Test;
+			sourceTree = "<group>";
+		};
+		41AF9A3B291947FD00374433 /* DTO */ = {
+			isa = PBXGroup;
+			children = (
+				415403D1291950AF0050C54D /* SearchUserRequest+.swift */,
+				415403CF2919506F0050C54D /* GetCachedImageRequest+.swift */,
+				41AF9A3D2919482200374433 /* UserPageResponse.swift */,
+				41AF9A3F2919484700374433 /* UserResponse.swift */,
+			);
+			path = DTO;
+			sourceTree = "<group>";
+		};
+		41AF9A3C2919480100374433 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				41AF9A412919486A00374433 /* GithubRepository.swift */,
+			);
+			path = Repository;
 			sourceTree = "<group>";
 		};
 		41DA8BA72913ED2300A7DFA0 = {
@@ -386,6 +420,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41AF9A3E2919482200374433 /* UserPageResponse.swift in Sources */,
 				41AF9A342917E42A00374433 /* CachedImageRequester.swift in Sources */,
 				416B317B2916A90600680F41 /* APIRequestable.swift in Sources */,
 				41DA8BB82913ED2300A7DFA0 /* ViewController.swift in Sources */,
@@ -393,9 +428,13 @@
 				41DA8BEF2913F75B00A7DFA0 /* RequestConvertible.swift in Sources */,
 				41DA8BB42913ED2300A7DFA0 /* AppDelegate.swift in Sources */,
 				41DA8BFD291539CD00A7DFA0 /* GetCachedImageUseCase.swift in Sources */,
+				415403D2291950AF0050C54D /* SearchUserRequest+.swift in Sources */,
 				416B31792916A8E000680F41 /* DecodedDataRequester.swift in Sources */,
 				416B317E2916A9A200680F41 /* RequestConvertible+.swift in Sources */,
+				415403D02919506F0050C54D /* GetCachedImageRequest+.swift in Sources */,
 				41DA8BE52913F5B200A7DFA0 /* UserModel.swift in Sources */,
+				41AF9A402919484700374433 /* UserResponse.swift in Sources */,
+				41AF9A422919486A00374433 /* GithubRepository.swift in Sources */,
 				41DA8BB62913ED2300A7DFA0 /* SceneDelegate.swift in Sources */,
 				41DA8BEC2913F6DC00A7DFA0 /* GithubRepositable.swift in Sources */,
 			);
@@ -409,6 +448,7 @@
 				41AF9A382917E4F700374433 /* FakeRequest.swift in Sources */,
 				41AF9A3A2917E5D100374433 /* ImageCache+.swift in Sources */,
 				416B318A2916ABFC00680F41 /* DecodedDataRequester+.swift in Sources */,
+				41AF9A442919495300374433 /* GithubRepositoryTests.swift in Sources */,
 				416B316929153BFA00680F41 /* GetCachedImageUseCase+.swift in Sources */,
 				416B316729153BD100680F41 /* GetCachedImageUseCaseTests.swift in Sources */,
 				416B31822916AAB200680F41 /* URLSession+.swift in Sources */,

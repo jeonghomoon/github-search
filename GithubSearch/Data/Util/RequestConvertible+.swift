@@ -9,7 +9,7 @@ import Foundation
 
 extension RequestConvertible {
     var endpoint: String {
-        "https://api.github.com/"
+        "https://api.github.com"
     }
     
     var method: String {
