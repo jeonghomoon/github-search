@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		415403D02919506F0050C54D /* GetCachedImageRequest+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415403CF2919506F0050C54D /* GetCachedImageRequest+.swift */; };
 		415403D2291950AF0050C54D /* SearchUserRequest+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415403D1291950AF0050C54D /* SearchUserRequest+.swift */; };
+		415403D7291A7C780050C54D /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415403D6291A7C780050C54D /* SearchViewModel.swift */; };
+		415403DB291A7E520050C54D /* UserItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415403DA291A7E520050C54D /* UserItem.swift */; };
+		415403E1291A80AF0050C54D /* SearchViewModel+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415403E0291A80AF0050C54D /* SearchViewModel+.swift */; };
+		415403E3291A80E50050C54D /* MockSearchUsersUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415403E2291A80E50050C54D /* MockSearchUsersUseCase.swift */; };
+		415403E5291A80F90050C54D /* MockGetCachedImageUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415403E4291A80F90050C54D /* MockGetCachedImageUseCase.swift */; };
+		415403E7291A822E0050C54D /* SearchViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415403E6291A822E0050C54D /* SearchViewModelTests.swift */; };
 		416B316729153BD100680F41 /* GetCachedImageUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 416B316629153BD100680F41 /* GetCachedImageUseCaseTests.swift */; };
 		416B316929153BFA00680F41 /* GetCachedImageUseCase+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 416B316829153BFA00680F41 /* GetCachedImageUseCase+.swift */; };
 		416B31792916A8E000680F41 /* DecodedDataRequester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 416B31782916A8E000680F41 /* DecodedDataRequester.swift */; };
@@ -55,6 +61,12 @@
 /* Begin PBXFileReference section */
 		415403CF2919506F0050C54D /* GetCachedImageRequest+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GetCachedImageRequest+.swift"; sourceTree = "<group>"; };
 		415403D1291950AF0050C54D /* SearchUserRequest+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SearchUserRequest+.swift"; sourceTree = "<group>"; };
+		415403D6291A7C780050C54D /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
+		415403DA291A7E520050C54D /* UserItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserItem.swift; sourceTree = "<group>"; };
+		415403E0291A80AF0050C54D /* SearchViewModel+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SearchViewModel+.swift"; sourceTree = "<group>"; };
+		415403E2291A80E50050C54D /* MockSearchUsersUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockSearchUsersUseCase.swift; sourceTree = "<group>"; };
+		415403E4291A80F90050C54D /* MockGetCachedImageUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockGetCachedImageUseCase.swift; sourceTree = "<group>"; };
+		415403E6291A822E0050C54D /* SearchViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModelTests.swift; sourceTree = "<group>"; };
 		416B316629153BD100680F41 /* GetCachedImageUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCachedImageUseCaseTests.swift; sourceTree = "<group>"; };
 		416B316829153BFA00680F41 /* GetCachedImageUseCase+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GetCachedImageUseCase+.swift"; sourceTree = "<group>"; };
 		416B31782916A8E000680F41 /* DecodedDataRequester.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecodedDataRequester.swift; sourceTree = "<group>"; };
@@ -109,6 +121,58 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		415403D5291A7C650050C54D /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				415403E8291A869E0050C54D /* Search */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		415403DC291A808D0050C54D /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				415403DD291A80940050C54D /* Test */,
+				415403DE291A80980050C54D /* TestDouble */,
+				415403DF291A80A00050C54D /* Util */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		415403DD291A80940050C54D /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				415403E6291A822E0050C54D /* SearchViewModelTests.swift */,
+			);
+			path = Test;
+			sourceTree = "<group>";
+		};
+		415403DE291A80980050C54D /* TestDouble */ = {
+			isa = PBXGroup;
+			children = (
+				415403E2291A80E50050C54D /* MockSearchUsersUseCase.swift */,
+				415403E4291A80F90050C54D /* MockGetCachedImageUseCase.swift */,
+			);
+			path = TestDouble;
+			sourceTree = "<group>";
+		};
+		415403DF291A80A00050C54D /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				415403E0291A80AF0050C54D /* SearchViewModel+.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		415403E8291A869E0050C54D /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				415403DA291A7E520050C54D /* UserItem.swift */,
+				415403D6291A7C780050C54D /* SearchViewModel.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
 		416B316A2915455700680F41 /* Data */ = {
 			isa = PBXGroup;
 			children = (
@@ -217,6 +281,7 @@
 		41DA8BB22913ED2300A7DFA0 /* GithubSearch */ = {
 			isa = PBXGroup;
 			children = (
+				415403D5291A7C650050C54D /* UI */,
 				41DA8BE32913F56C00A7DFA0 /* Domain */,
 				416B316A2915455700680F41 /* Data */,
 				41DA8BB32913ED2300A7DFA0 /* AppDelegate.swift */,
@@ -233,6 +298,7 @@
 		41DA8BC92913ED2400A7DFA0 /* GithubSearchTests */ = {
 			isa = PBXGroup;
 			children = (
+				415403DC291A808D0050C54D /* UI */,
 				41DA8BF02913F7CD00A7DFA0 /* Domain */,
 				416B317F2916AA9000680F41 /* Data */,
 			);
@@ -421,11 +487,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				41AF9A3E2919482200374433 /* UserPageResponse.swift in Sources */,
+				415403DB291A7E520050C54D /* UserItem.swift in Sources */,
 				41AF9A342917E42A00374433 /* CachedImageRequester.swift in Sources */,
 				416B317B2916A90600680F41 /* APIRequestable.swift in Sources */,
 				41DA8BB82913ED2300A7DFA0 /* ViewController.swift in Sources */,
 				41DA8BE92913F66C00A7DFA0 /* SearchUsersUseCase.swift in Sources */,
 				41DA8BEF2913F75B00A7DFA0 /* RequestConvertible.swift in Sources */,
+				415403D7291A7C780050C54D /* SearchViewModel.swift in Sources */,
 				41DA8BB42913ED2300A7DFA0 /* AppDelegate.swift in Sources */,
 				41DA8BFD291539CD00A7DFA0 /* GetCachedImageUseCase.swift in Sources */,
 				415403D2291950AF0050C54D /* SearchUserRequest+.swift in Sources */,
@@ -452,9 +520,13 @@
 				416B316929153BFA00680F41 /* GetCachedImageUseCase+.swift in Sources */,
 				416B316729153BD100680F41 /* GetCachedImageUseCaseTests.swift in Sources */,
 				416B31822916AAB200680F41 /* URLSession+.swift in Sources */,
+				415403E5291A80F90050C54D /* MockGetCachedImageUseCase.swift in Sources */,
 				41DA8BF82913FACC00A7DFA0 /* SearchUsersUseCase+.swift in Sources */,
 				41DA8BF52913FA7F00A7DFA0 /* SearchUsersUseCaseTests.swift in Sources */,
+				415403E1291A80AF0050C54D /* SearchViewModel+.swift in Sources */,
+				415403E3291A80E50050C54D /* MockSearchUsersUseCase.swift in Sources */,
 				41DA8BF32913F9B300A7DFA0 /* MockGithubRepository.swift in Sources */,
+				415403E7291A822E0050C54D /* SearchViewModelTests.swift in Sources */,
 				41AF9A362917E46E00374433 /* CachedImageRequesterTests.swift in Sources */,
 				416B31882916AB0500680F41 /* DecodedDataRequesterTests.swift in Sources */,
 			);
