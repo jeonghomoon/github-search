@@ -7,10 +7,20 @@
 
 import UIKit
 
-struct UserItem: Equatable {
+enum UserSection {
+    case main
+}
+
+struct UserItem: Equatable, Hashable {
+    private let identifier = UUID()
+
     let name: String
     let profile: String
     var profileImage: UIImage?
+
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(identifier)
+    }
 }
 
 extension UserItem {
