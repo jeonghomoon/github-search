@@ -5,6 +5,7 @@
 //  Created by Jeongho Moon on 2022/11/06.
 //
 
+import Domain
 import UIKit
 
 class CachedImageRequester: APIRequestable {

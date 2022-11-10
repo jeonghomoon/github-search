@@ -7,7 +7,7 @@
 
 import UIKit
 
-protocol GithubRepositable: AnyObject {
+public protocol GithubRepositable: AnyObject {
     func searchUsers<T: RequestConvertible>(
         _ request: T
     ) async throws -> [UserModel]

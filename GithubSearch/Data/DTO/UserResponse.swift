@@ -5,6 +5,8 @@
 //  Created by Jeongho Moon on 2022/11/07.
 //
 
+import Domain
+
 struct UserResponse: Codable {
     let login: String
     let id: Int

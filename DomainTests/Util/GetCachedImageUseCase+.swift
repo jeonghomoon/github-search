@@ -5,7 +5,7 @@
 //  Created by Jeongho Moon on 2022/11/04.
 //
 
-@testable import GithubSearch
+@testable import Domain
 
 extension GetCachedImageUseCase {
     convenience init() {

@@ -5,25 +5,30 @@
 //  Created by Jeongho Moon on 2022/11/03.
 //
 
-struct SearchUsersRequest {
-    let query: String
-    let page: Int
+public struct SearchUsersRequest {
+    public let query: String
+    public let page: Int
+
+    public init(query: String, page: Int) {
+        self.query = query
+        self.page = page
+    }
 }
 
-protocol SearchUsersUsable: AnyObject {
+public protocol SearchUsersUsable: AnyObject {
     func execute<T: RequestConvertible>(
         _ request: T
     ) async throws -> [UserModel]
 }
 
-final class SearchUsersUseCase: SearchUsersUsable {
+public final class SearchUsersUseCase: SearchUsersUsable {
     private var repository: GithubRepositable
 
-    init(repository: GithubRepositable) {
+    public init(repository: GithubRepositable) {
         self.repository = repository
     }
 
-    func execute<T: RequestConvertible>(
+    public func execute<T: RequestConvertible>(
         _ request: T
     ) async throws -> [UserModel] {
         try await repository.searchUsers(request)

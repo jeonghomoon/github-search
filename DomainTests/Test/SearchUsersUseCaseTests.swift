@@ -5,7 +5,7 @@
 //  Created by Jeongho Moon on 2022/11/03.
 //
 
-@testable import GithubSearch
+@testable import Domain
 import XCTest
 
 final class SearchUsersUseCaseTests: XCTestCase {
@@ -28,7 +28,7 @@ final class SearchUsersUseCaseTests: XCTestCase {
         let expect = MockGithubRepository.successUsers
 
         // when
-        let request = SearchUsersRequest(query: "query", page: 1)
+        let request = FakeSearchUsersRequest(query: "query", page: 1)
         let response = try await sut.execute(request)
 
         // then

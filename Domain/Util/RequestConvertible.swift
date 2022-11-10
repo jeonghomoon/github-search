@@ -5,7 +5,7 @@
 //  Created by Jeongho Moon on 2022/11/03.
 //
 
-protocol RequestConvertible {
+public protocol RequestConvertible {
     var endpoint: String { get }
 
     var path: String { get }

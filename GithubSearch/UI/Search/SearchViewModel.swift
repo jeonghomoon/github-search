@@ -5,6 +5,7 @@
 //  Created by Jeongho Moon on 2022/11/08.
 //
 
+import Domain
 import UIKit
 
 final class SearchViewModel {

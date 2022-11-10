@@ -5,7 +5,7 @@
 //  Created by Jeongho Moon on 2022/11/03.
 //
 
-@testable import GithubSearch
+@testable import Domain
 import UIKit
 
 final class MockGithubRepository: GithubRepositable {

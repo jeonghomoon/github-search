@@ -5,6 +5,7 @@
 //  Created by Jeongho Moon on 2022/11/05.
 //
 
+import Domain
 import Foundation
 
 protocol APIRequestable: AnyObject {

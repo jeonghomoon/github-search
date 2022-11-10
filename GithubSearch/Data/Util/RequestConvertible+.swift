@@ -5,22 +5,23 @@
 //  Created by Jeongho Moon on 2022/11/05.
 //
 
+import Domain
 import Foundation
 
 extension RequestConvertible {
-    var endpoint: String {
+    public var endpoint: String {
         "https://api.github.com"
     }
-    
-    var method: String {
+
+    public var method: String {
         "GET"
     }
-    
-    var path: String {
+
+    public var path: String {
         ""
     }
 
-    func asString() throws -> String {
+    public func asString() throws -> String {
         guard !path.isEmpty else {
             throw RequestError.emptyPath
         }

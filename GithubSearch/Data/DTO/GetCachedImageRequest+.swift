@@ -5,8 +5,10 @@
 //  Created by Jeongho Moon on 2022/11/07.
 //
 
+import Domain
+
 extension GetCachedImageRequest: RequestConvertible {
-    func asString() throws -> String {
+    public func asString() throws -> String {
         image
     }
 }

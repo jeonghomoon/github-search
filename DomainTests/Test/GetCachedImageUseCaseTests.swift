@@ -5,7 +5,7 @@
 //  Created by Jeongho Moon on 2022/11/04.
 //
 
-@testable import GithubSearch
+@testable import Domain
 import XCTest
 
 final class GetCachedImageUseCaseTests: XCTestCase {
@@ -25,7 +25,7 @@ final class GetCachedImageUseCaseTests: XCTestCase {
 
     func testGetCachedImageUseCase() async throws {
         // given
-        let request = GetCachedImageRequest(image: "image")
+        let request = FakeGetCachedImageRequest(image: "image")
 
         // when
         let requestedResponse = try await sut.execute(request)

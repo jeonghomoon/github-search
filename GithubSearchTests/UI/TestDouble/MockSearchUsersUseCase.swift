@@ -5,6 +5,7 @@
 //  Created by Jeongho Moon on 2022/11/08.
 //
 
+@testable import Domain
 @testable import GithubSearch
 
 final class MockSearchUsersUseCase: SearchUsersUsable {
