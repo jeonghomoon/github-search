@@ -8,7 +8,7 @@
 import Domain
 import UIKit
 
-class CachedImageRequester: APIRequestable {
+final class CachedImageRequester: APIRequestable {
     typealias Response = UIImage?
 
     private let urlSession: URLSession
@@ -40,10 +40,10 @@ class CachedImageRequester: APIRequestable {
     }
 }
 
-class ImageCache {
+public final class ImageCache {
     private let cache: NSCache<NSURL, UIImage>
 
-    init(cache: NSCache<NSURL, UIImage> = NSCache()) {
+    public init(cache: NSCache<NSURL, UIImage> = NSCache()) {
         self.cache = cache
     }
 

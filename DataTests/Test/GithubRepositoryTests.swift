@@ -5,6 +5,7 @@
 //  Created by Jeongho Moon on 2022/11/07.
 //
 
+@testable import Data
 @testable import Domain
 @testable import GithubSearch
 import XCTest

@@ -8,11 +8,11 @@
 import Domain
 import UIKit
 
-final class GithubRepository: GithubRepositable {
+public final class GithubRepository: GithubRepositable {
     private let urlSession: URLSession
     private let imageCache: ImageCache
 
-    init(
+    public init(
         urlSession: URLSession = .shared,
         imageCache: ImageCache = ImageCache()
     ) {
@@ -20,7 +20,7 @@ final class GithubRepository: GithubRepositable {
         self.imageCache = imageCache
     }
 
-    func searchUsers<T: RequestConvertible>(
+    public func searchUsers<T: RequestConvertible>(
         _ request: T
     ) async throws -> [UserModel] {
         let requester = DecodedDataRequester<UserPageResponse>(
@@ -30,7 +30,7 @@ final class GithubRepository: GithubRepositable {
         return response.toDomain()
     }
 
-    func getCachedImage<T: RequestConvertible>(
+    public func getCachedImage<T: RequestConvertible>(
         _ request: T
     ) async throws -> UIImage? {
         let requester = CachedImageRequester(
